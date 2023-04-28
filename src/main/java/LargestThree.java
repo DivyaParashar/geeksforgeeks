@@ -3,7 +3,7 @@ package src.main.java;
 public class LargestThree {
 
     public static void main(String[] args) {
-        int[] arr = {10, 4, 3, 50, 23, 90};
+        int[] arr = {67,98,0,-3,8,9,9,12};
         printLargestThree(arr);
     }
 
@@ -11,6 +11,7 @@ public class LargestThree {
         int i, first, second, third;
         if(arr.length <3 ){
             System.out.println("Invalid input");
+            return;
         }
         first=second=third = Integer.MIN_VALUE;
         for(i=0;i<arr.length;i++){
